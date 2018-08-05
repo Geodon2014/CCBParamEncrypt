@@ -21,6 +21,9 @@ using System.Web;
 
 namespace CCBParamEncrypt
 {
+    /// <summary>
+    /// 建行支付接口ccbParam参数加密算法的c#实现
+    /// </summary>
     public class MCipherEncryptor
     {
         private string encryptKey = "9R@e8Y3#";
