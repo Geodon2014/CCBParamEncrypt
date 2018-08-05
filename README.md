@@ -32,3 +32,6 @@ String ccbParam = ccbEncryptor.doEncrypt(strSrcParas);
 Assert.AreEqual(expected, ccbParam);
 </code>
 </pre>
+
+### 有关依赖
+算法因为采用了HttpUtility.UrlEncode，所以需要引入System.Web;
