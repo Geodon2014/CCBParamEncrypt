@@ -14,3 +14,5 @@
    5.1：java的utf-16默认编码顺序为高位优先（Big-endian），而c#的默认为低位优先（Little-Endian），解决该问题的办法是c#也采用高位优先，对应的编码名称是unicodeFFFE<br />
    5.2：java的utf-16编码后的byte数组相对于c#的utf-16编码后的byte数组，前两位多了-2和-1，因此为了保证一致，需要c#在byte数组前插入-2和-1，但c#的byte值是无符号的，所以不支持负值，要想处理负值，则需要按照如下方式处理：(byte)(0xff & 负值)
 
+### 有关测试
+有关算法使用及单元测试结果请参考：CCBParamEncryptTests.MCipherEncryptorTests
